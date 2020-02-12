@@ -22,3 +22,9 @@ Please send us solution as your own Github repository. You are not allowed to fo
 # Simple client/server app README.md
 
 you must install node.js and npm to get started with your project
+
+---
+
+## Personal/Side Objectives
+* learn VIM more
+* ...
