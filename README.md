@@ -16,3 +16,9 @@ Create a docker-compose configuration for given repository containing two servic
 Please send us solution as your own Github repository. You are not allowed to fork the repository with the recruitment task.
 
 [Link to the project repository](https://github.com/skygate/app-example)
+
+---
+
+# Simple client/server app README.md
+
+you must install node.js and npm to get started with your project
