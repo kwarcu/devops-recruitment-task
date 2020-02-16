@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  proxy_prod:
+    build:
+      context: docker/proxy
+      args:
+        ENVIRONMENT: production
+    ports:
+      - 80:8080
+  client_prod:
+    build:
+      context: ./client
+      target: client_prod
+
+  server_prod:
+    build:
+      context: ./server
+      target: server_base
+

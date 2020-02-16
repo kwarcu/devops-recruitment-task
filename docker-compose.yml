@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  proxy:
+    build:
+      context: docker/proxy
+      args:
+        ENVIRONMENT: development
+    ports:
+      - 8080:8080
+  client:
+    build:
+      context: ./client
+      target: client_base
+    volumes:
+      - ./client/src:/client/src
+      - ./client/public:/client/public
+  server:
+    build:
+      context: ./server
+      target: server_base
+    volumes:
+      - ./server/src:/server/src
